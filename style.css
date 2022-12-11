@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow: hidden;
+    background-color: #f9f9f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.mode{
+    position: absolute;
+    right: 0;
+}
+
+#lightmode{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    padding-top: .5rem;
+    padding-right: .8rem;
+    visibility: hidden;
+}
+
+#darkmode{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: .5rem;
+    padding-right: .8rem;
+    
+}
+
+.container{
+    width: 100vw;
+    display: flex;
+    padding-top: 4rem;
+    font-size: 2.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    color: #4e6464;
+}
+
+.subintro{
+    width: 100vw;
+    display: flex;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    justify-content: center;
+    color: #4e6464;
+}
+
+.wallpaper{
+    height: 30rem;
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#light{
+    height: 30rem;
+    position: absolute;
+    visibility: visible;;
+}
+#dark{
+    height: 30rem;
+    position: absolute;
+    visibility: hidden;
+}
+
+
+.time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.get-started{
+    padding-top: 67vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.get-started button{
+    border: 2px solid #4e6464;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-size: 1.1rem;
+    background-color: #f9f9f0;
+}
+
+.get-started button:hover{
+    animation-name: btn-animation;
+    animation-duration: 500ms;
+    transition: all ease-in-out;
+}
+
+@keyframes btn-animation{
+    0%{
+        padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    }
+
+    50%{
+        padding-left: 4rem;
+    padding-right: 4rem;
+    margin-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    }
+
+    100%{
+        padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    }
+}
+
+
+
+
+@media (max-width: 914px){
+    .wallpaper{
+        height: 20rem;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #light{
+        height: 20rem;
+        position: absolute;
+        visibility: visible;;
+    }
+    #dark{
+        height: 20rem;
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .get-started{
+        padding-top: 47vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+}
+@media (max-width: 622px){
+    .wallpaper{
+        height: 15rem;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #light{
+        height: 15rem;
+        position: absolute;
+        visibility: visible;;
+    }
+    #dark{
+        height: 15rem;
+        position: absolute;
+        visibility: hidden;
+    }
+}
+@media (max-width: 487px){
+    .wallpaper{
+        padding-top: 1rem;
+        height: 10rem;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #light{
+        height: 10rem;
+        position: absolute;
+        visibility: visible;;
+    }
+    #dark{
+        height: 10rem;
+        position: absolute;
+        visibility: hidden;
+    }
+    .get-started{
+        padding-top: 27vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+@media (max-width: 587px) {
+    .container{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    }
+    .subintro{
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 417px) {
+    .container{
+    font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    }
+
+    .subintro{
+        font-size: 0.7rem;
+    }
+
+    .get-started button{
+        padding-left: .8rem;
+        padding-right: .8rem;
+        margin-right: 1.3rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        font-size: 0.7rem;
+        animation: none !important;;
+    }
+}
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mindmap.css">
+    <title>MindMap - Dashboard</title>
+</head>
+<body>
+
+    <div class="mode">
+        <input type="image" id="lightmode" src="assets/lightmode.png" height="20" onclick="mode_toggle()"/>
+        <input type="image" id="darkmode" src="assets/darkmode.png" height="20" onclick="mode_toggle()"/>
+    </div>
+
+    <div class="greet"></div>
+    <div class="container">
+        <div class="left-panel">
+            <div class="start-session">
+                Start Breathing Session
+            </div>
+        </div>
+        <div class="right-panel">
+            <div class="start-session">
+                Your Todo Board
+            </div>
+            <div class="add-task">
+                <button id="add-task" onclick="add_task()">➕</button>
+            </div>
+            <div class="task">
+                <!-- <div class="task-style">
+                    Hello
+                </div> -->
+            </div>
+        </div>
+        <div class="mid-panel">
+            <div class="start-session">
+                Start Focus Session
+            </div>
+        </div>
+      </div>
+      
+</body>
+<script src="mindmap.js"></script>
+</html>
