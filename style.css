@@ -160,7 +160,7 @@ body {
     }
 
     .get-started{
-        padding-top: 47vh;
+        padding-top: 53vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -209,7 +209,7 @@ body {
         visibility: hidden;
     }
     .get-started{
-        padding-top: 27vh;
+        padding-top: 34vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -237,6 +237,15 @@ body {
     .subintro{
         font-size: 0.7rem;
     }
+
+    .get-started{
+        padding-top: 54vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
 
     .get-started button{
         padding-left: .8rem;
